@@ -1,0 +1,4 @@
+file = open('./../../../programs/fsread/video.mp4')
+content = file.read()
+len(content)
+

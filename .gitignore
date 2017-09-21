@@ -1,0 +1,15 @@
+# macOS system files
+*.DS_Store
+
+# Logs and Temp
+*.log
+tmp/
+
+# For JavaScript / Node
+node_modules/
+
+# Don't keep video files.
+*.mp4
+*.mp4.code
+*.pdf
+*.pdf.code

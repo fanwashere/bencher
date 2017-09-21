@@ -1,0 +1,20 @@
+# Threading example found on StackOverflow
+# https://stackoverflow.com/questions/2846653/how-to-use-threading-in-python
+#
+# Original implemented by user philshem (https://stackoverflow.com/users/2327328/philshem)
+# Modified by Fan Zhang (http://github.com/fanwashere)
+
+import urllib2 
+from multiprocessing.dummy import Pool as ThreadPool 
+
+n = 10
+url = 'http://google.com'
+urls = [url for x in range(n)]
+
+pool = ThreadPool(n) 
+
+results = pool.map(urllib2.urlopen, urls)
+
+pool.close() 
+pool.join() 
+

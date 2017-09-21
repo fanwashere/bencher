@@ -1,0 +1,15 @@
+package main
+
+import "net/http"
+
+func main() {
+    urls := [8]string{"http://www.python.org", "http://www.python.org/about/", "http://www.onlamp.com/pub/a/python/2003/04/17/metaclasses.html", "http://www.python.org/doc/", "http://www.python.org/download/", "http://www.python.org/getit/", "http://www.python.org/community/", "http://wiki.python.org/moin/"}
+
+    for _, url := range urls {
+        _, err := http.Get(url)
+        if err != nil {
+            continue
+        }
+    }
+}
+

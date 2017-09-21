@@ -1,0 +1,11 @@
+n = 30000000
+tempInt = 0
+tempString = ""
+tempDict = {}
+tempArr = []
+
+for x in range(0, n):
+	tempInt = 0
+	tempString = "Some string."
+	tempDict = {}
+	tempArr = []

@@ -1,0 +1,11 @@
+var http = require('http');
+
+var n = 10;
+var url = "http://google.com";
+
+var done = 0;
+for (var i = 0; i < n; i++) {
+	http.get(url, function(res) {
+		++done;
+	});
+}
